@@ -163,3 +163,29 @@ select {
     background: white;
     color: rgb(255, 200, 0);
 }
+
+@media screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    body {
+        font-size: 14px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input, 
+    form button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .todo-list {
+        min-width: 90%;
+    }
+
+    .select {
+        margin: 1rem 0;
+    }
+}
