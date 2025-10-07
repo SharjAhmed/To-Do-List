@@ -15,7 +15,7 @@ header {
     font-size: 1.5rem;
 }
 
-header,
+header, 
 form {
     min-height: 20vh;
     display: flex;
@@ -23,7 +23,7 @@ form {
     align-items: center;
 }
 
-form input,
+form input, 
 form button {
     padding: 0.5rem;
     padding-left: 1rem;
@@ -79,7 +79,7 @@ form button:hover {
     flex: 1;
 }
 
-.trash-btn,
+.trash-btn, 
 .complete-btn {
     color: white;
     border: none;
@@ -110,7 +110,7 @@ form button:hover {
     padding: 0rem 0.5rem;
 }
 
-.fa-trash,
+.fa-trash, 
 .fa-check-circle {
     pointer-events: none;
 }
@@ -141,7 +141,7 @@ select {
 }
 
 select {
-    color: rgb(255, 200, 0);
+    color:rgb(255, 200, 0);
     width: 10rem;
     height: 3.2rem;
     cursor: pointer;
@@ -151,7 +151,7 @@ select {
 .select::after {
     content: "\25BC";
     position: absolute;
-    background: rgb(255, 200, 0);
+    background:rgb(255, 200, 0);
     top: 0;
     right: 0;
     padding: 1rem;
@@ -164,27 +164,20 @@ select {
     color: rgb(255, 200, 0);
 }
 
-@media screen and (max-width: 768px) {
+.drag-handle {
+    cursor: grab;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    user-select: none;
+    color: rgb(255, 200, 0);
+    display: flex;
+    align-items: center;
+}
 
-    /* Styles for mobile devices */
-    body {
-        font-size: 14px;
-    }
-
-    form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    form input {
-        margin: 0.5rem 0;
-    }
-
-    .todo-list {
-        min-width: 90%;
-    }
-
-    .select {
-        margin: 1rem 0;
+/* On mobile, make drag handle bigger */
+@media (max-width: 768px) {
+    .drag-handle {
+        font-size: 2rem;
+        padding: 0 1rem;
     }
 }
