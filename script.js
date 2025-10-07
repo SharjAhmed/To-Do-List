@@ -257,3 +257,4 @@ function getTodos() {
         todoList.appendChild(todoDiv);
     });
 }
+
