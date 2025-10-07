@@ -197,17 +197,18 @@ select {
         width: 100%;
         font-size: 1.4rem;
         padding: 0.75rem 1rem;
+        margin-top: 1rem;
         margin-bottom: 0.5rem;
         border-radius: 1rem;
     }
 
     /* Make the button full width below input */
-    form button.todo-button {
-        width: 100%;
+        form button.todo-button {
+        width: 50%;
         font-size: 1.6rem;
         padding: 0.75rem;
         border-radius: 1rem;
-        margin-left: 0;
+        margin-left: 25%;
     }
 
     /* Center the select below button */
